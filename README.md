@@ -133,27 +133,18 @@ test.s je bukvalno 9. Zadatak sa vezbi I proverene su sve moguce kombinacije oko
 #### tabela simbola
 #      
 	ime       sek       vr.      vid.      r.b.
-      .bss      .bss         0         l         8
-     .data     .data         0         l         7
-     .text     .text         0         l         4
-         a     .data        14         g         0
-         b       UND         0         g         2
-         c      .bss         0         g         1
-         d     .text        21         l         6
-         e     .data         8         l         5
-         g       CON         7         l         3
+     .data     .data         0         l         3
+     .text     .text         0         l         1
+         a     .data         5         l         2
+         g       CON         4         l         0
+
 
 #### .rel.text
 #    
 	ofset       tip       vr.
-         2    PC_REL         0
-         6    PC_REL         7
-        10       ABS         2
-        18       ABS         0
-        21       ABS         4
-        26       ABS         2
-        30       ABS         1
-        36       ABS         7
+         7       ABS         3
+        37    PC_REL         3
+
 
 #### .rel.data
 #    
@@ -163,13 +154,14 @@ test.s je bukvalno 9. Zadatak sa vezbi I proverene su sve moguce kombinacije oko
         12       ABS         8
         14       ABS         2
 
-#### .text  38
+#### .text  40
 #	
-	a4 8e fe ff a4 8e 06 00 a4 a0 00 00 a4 8e 05 00
-	2c 83 00 00 4a 15 00 24 20 a0 00 00 24 a0 00 00
-	20 24 20 a0 08 00 
+	24 22 00 04 00 60 63 05 22 64 83 ff 00 22 2c 22
+	24 28 23 25 28 23 00 ff 34 22 a0 ff 00 5c 22 44
+	58 23 45 9c 8e 03 00 c4 
 
-#### .data  16
+
+#### .data  10
 #	
-	00 00 00 00 00 00 00 00 00 00 08 00 00 00 00 00
+	00 00 00 00 00 00 00 00 00 00
 
