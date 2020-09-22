@@ -12,3 +12,17 @@ Program prima 3 argumenta preko komadne linije: nastavak -o,naziv izlaznog objek
 	Posle drugog prolaza pravi se predmetni fajl u modifikovanom elf formatu i upisuju se redom podaci dobijeni asembliranjem: tabela simbola ( naziv, izvorna sekcija, pomeraj od početka sekcije, lokalitet i indentifikacioni broj),  relokacione tabele simbola za svaku korišćenu sekciju (pomeraj od početka sekcije, vrsta relokacije, indentifikacioni broj iz tabele simbola) i sadržaji sekcija u heksadecimalnom zapisu.
 	Kada se program uspesno izvrsi asembliranje na konzoli se ispisuje program zavrsen bez gresaka.
 
+## Uputstvo za prevođenje i pokretanje programa
+
+Prvo se instalira g++ pomocu naredbe: 
+sudo apt-get install g++
+Zatim posto sam korstio eclipse IDE potrebno je bilo instaliriti java vituelnu masinu(samo zbog eclipse-a ne zbog projekta)
+sudo apt-get install openjdk-7-jre-headless
+
+Program se može pokrenuti unutar Ubuntu virtulne mašine preuzete iz laboratorije 26. Pre pokretanja programa potrebno je instalirati i podesiti GCC kompajler verzije 6 ili novije.
+
+Program se prevodi sledećom komandom:
+g++ -std=c++0x main.cpp types.h -o izvrsniProgram 
+Program se pokrece sledecom komandom:
+./izvrsniProgram -o nazivIzlaznogFajla.o nazivUlaznogFajla.s
+
