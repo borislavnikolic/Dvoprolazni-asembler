@@ -58,7 +58,7 @@ c:	.skip 	8
 
 ### test1.o
 
-#tabela simbola
+# tabela simbola
 #      ime       sek       vr.      vid.      r.b.
       .bss      .bss         0         l         8
      .data     .data         0         l         7
@@ -70,7 +70,7 @@ c:	.skip 	8
          e     .data         8         l         5
          g       CON         7         l         3
 
-#.rel.text
+# .rel.text
 #    ofset       tip       vr.
          2    PC_REL         0
          6    PC_REL         7
@@ -81,19 +81,19 @@ c:	.skip 	8
         30       ABS         1
         36       ABS         7
 
-#.rel.data
+# .rel.data
 #    ofset       tip       vr.
          8       ABS         0
         10       ABS         7
         12       ABS         8
         14       ABS         2
 
-#.text  38
+# .text  38
 #	a4 8e fe ff a4 8e 06 00 a4 a0 00 00 a4 8e 05 00
 	2c 83 00 00 4a 15 00 24 20 a0 00 00 24 a0 00 00
 	20 24 20 a0 08 00 
 
-#.data  16
+# .data  16
 #	00 00 00 00 00 00 00 00 00 00 08 00 00 00 00 00
 
 
