@@ -106,7 +106,6 @@ test.s je bukvalno 9. Zadatak sa vezbi I proverene su sve moguce kombinacije oko
 ### test2.s
 
 # 
-	test1.s
 	.equ g,4
 	.text
 	movw r1,&g
